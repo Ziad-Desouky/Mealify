@@ -6,6 +6,7 @@
 @media screen and (max-width: 1024px) {
   header {
     height: fit-content;
+    padding-bottom: 40px;
     text-align: center;
   }
   header .container {
@@ -62,8 +63,23 @@
       0.5
     );
   }
+  #chefs .cards-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #chefs .cards-container .card {
+    width: calc((100% - 20px) / 2);
+  }
 }
 @media screen and (max-width: 768px) {
+  #chefs .cards-container {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  #chefs .cards-container .card {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 430px) {
   html {
@@ -74,5 +90,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 1.25rem;
+  }
+   #chefs .cards-container .card {
+    width: 100%;
   }
 }
