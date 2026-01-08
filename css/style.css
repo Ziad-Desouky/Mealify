@@ -102,7 +102,76 @@ h6 {
 .section-padding {
   padding: 6.25rem 0;
 }
-/* End Global */
+/** End Global */
+/*! Start Nav */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-light);
+  z-index: 999;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-logo h1::after {
+  content: ".";
+  color: var(--primary-color);
+}
+.nav-links ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-tertiary);
+}
+.nav-links a {
+  position: relative;
+  transition: color var(--animation-duration);
+}
+.nav-links ul li a::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  transition: width var(--animation-duration);
+}
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+.nav-links a:hover{
+    color: var(--color-default);
+}
+body:not(:has(:target)) nav a[href="#home"],
+body:has(#home:target) nav a[href="#home"],
+body:has(#chefs:target) nav a[href="#chefs"],
+body:has(#gallery:target) nav a[href="#gallery"],
+body:has(#contact:target) nav a[href="#contact"] {
+  color: var(--color-default);
+}
+body:not(:has(:target)) nav a[href="#home"]::after,
+body:has(#home:target) nav a[href="#home"]::after,
+body:has(#chefs:target) nav a[href="#chefs"]::after,
+body:has(#gallery:target) nav a[href="#gallery"]::after,
+body:has(#contact:target) nav a[href="#contact"]::after {
+  width: 100%;
+}
+.menu-icon i{
+    font-size: 25px;
+    cursor: pointer;
+}
+.menu-icon .light{
+    display: none;
+}
+
+/*! End Nav */
+/* Start Header */
 header {
   height: 100vh;
   display: flex;
@@ -124,7 +193,7 @@ header .container > * {
   margin: 5px 0;
 }
 .header-content p {
-  color: #4f4f5a;
+  color: var(--color-tertiary);
   line-height: 1.625rem;
 }
 .btn-group {

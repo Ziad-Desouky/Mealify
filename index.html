@@ -16,13 +16,39 @@
     />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dark-mode.css">
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
+    <nav>
+      <div class="container">
+        <div class="nav-logo">
+          <h1>Mealify</h1>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chefs">Chefs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-icon">
+          <label for="theme-toggle"><i class="fa-solid fa-moon dark"></i></label>
+          <label for="theme-toggle"><i class="fa-solid fa-sun light"></i></label>
+          <input type="checkbox" id="theme-toggle" hidden aria-hidden="true" />
+
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
     <header class="section-padding bg-gray" id="home">
       <div class="container">
         <div class="header-content">
-          <h2>Enjoy Your Healthy <br> Delicious Food</h2>
+          <h2>
+            Enjoy Your Healthy <br />
+            Delicious Food
+          </h2>
           <p>
             Sed autem laudantium dolores. Voluptatem itaque ea consequatur
             eveniet. Eum quas beatae cumque eum quaerat.
@@ -30,14 +56,15 @@
           <div class="btn-group">
             <a href="#" class="btn btn-main">Book a Table</a>
             <a href="#" class="video-btn">
-                <div class="icon">
-                    <i class="fa-solid fa-play"></i>
-                </div>
-                Watch a Video</a>
+              <div class="icon">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              Watch a Video</a
+            >
           </div>
         </div>
         <picture>
-            <img src="images/hero-img.png" alt="A black dish filled with food">
+          <img src="images/hero-img.png" alt="A black dish filled with food" />
         </picture>
       </div>
     </header>
