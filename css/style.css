@@ -169,7 +169,13 @@ body:has(#contact:target) nav a[href="#contact"]::after {
 .menu-icon .light{
     display: none;
 }
-
+.menu-toggle{
+    display: none;
+}
+.close-icon{
+    display: none;
+    text-align: right;
+}
 /*! End Nav */
 /* Start Header */
 header {

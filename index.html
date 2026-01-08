@@ -23,10 +23,11 @@
     <nav>
       <div class="container">
         <div class="nav-logo">
-          <h1>Mealify</h1>
+          <h1><a href="index.html">Mealify</a></h1>
         </div>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
           <ul>
+            <li><a href="index.html"><i class="fa-solid fa-x close-icon"></i></a></li>
             <li><a href="#home">Home</a></li>
             <li><a href="#chefs">Chefs</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -38,11 +39,11 @@
           <label for="theme-toggle"><i class="fa-solid fa-sun light"></i></label>
           <input type="checkbox" id="theme-toggle" hidden aria-hidden="true" />
 
-          <i class="fa-solid fa-bars"></i>
+          <a href="#navLinks" class="menu-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
       </div>
     </nav>
-    <header class="section-padding bg-gray" id="home">
+    <header class="bg-gray" id="home">
       <div class="container">
         <div class="header-content">
           <h2>
