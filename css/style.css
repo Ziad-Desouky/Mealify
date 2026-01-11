@@ -413,8 +413,12 @@ body:has(.menu-icon input[type="checkbox"]:checked)
     &:hover .overlay {
       transform: translateY(0);
     }
+    &:hover img {
+      transform: scale(1.1);
+    }
     img {
       width: 100%;
+      transition: transform var(--animation-duration);
     }
     .overlay {
       background-color: rgba(0, 0, 0, 0.7);
