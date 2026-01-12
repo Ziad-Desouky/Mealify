@@ -121,6 +121,18 @@
       }
     }
   }
+  footer .about {
+    width: calc(50% - 10px);
+    order: 1;
+  }
+  footer .subscribe {
+    width: 100%;
+    order: 3;
+  }
+  footer .contact-details {
+    width: calc(50% - 10px);
+    order: 2;
+  }
 }
 @media screen and (max-width: 890px) {
   .gallery-pics {
@@ -175,6 +187,19 @@
         width: 100%;
       }
     }
+  }
+  footer .container > div {
+    width: 100%;
+  }
+  footer .about {
+    order: 1;
+  }
+  footer .subscribe {
+    width: 100%;
+    order: 2;
+  }
+  footer .contact-details {
+    order: 3;
   }
 }
 @media screen and (max-width: 430px) {
