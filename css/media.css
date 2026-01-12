@@ -108,6 +108,19 @@
       order: 7;
     }
   }
+  .contact {
+    form {
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 15px;
+        input {
+          width: calc(100%);
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 890px) {
   .gallery-pics {
@@ -153,6 +166,14 @@
     }
     .kebab {
       order: 7;
+    }
+  }
+  .contact {
+    .details {
+      flex-direction: column;
+      & > div {
+        width: 100%;
+      }
     }
   }
 }
