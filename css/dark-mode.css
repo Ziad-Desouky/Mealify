@@ -1,0 +1,32 @@
+:root:has(.menu-icon input[type="checkbox"]:checked) {
+  --color-default: #ffffff;
+  --primary-hue: 35;
+  --primary-saturation: 72%;
+  --primary-lightness: 44%;
+  --primary-color: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness)
+  );
+  --color-secondary: #fff;
+  --color-tertiary: #9f9f9f;
+  --light-hue: 0;
+  --light-saturation: 0%;
+  --light-lightness: 9%;
+  --color-light: hsl(
+    var(--light-hue),
+    var(--light-saturation),
+    var(--light-lightness)
+  );
+  --color-gray:#202020;
+  --color-light-gray: #252525;
+}
+body:has(.menu-icon input[type="checkbox"]:checked) .dark {
+  display: none;
+}
+body:has(.menu-icon input[type="checkbox"]:checked) .light {
+  display: inline-block;
+}
+body{
+  background-color: var(--color-gray);
+}
