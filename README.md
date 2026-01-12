@@ -5,7 +5,7 @@ Mealify is a modern, fully responsive restaurant landing page built using **pure
 ---
 
 ## 🔗 Live Demo
-👉 https://ziad-ayman.github.io/mealify/
+👉 ziad-desouky.github.io/Mealify/
 
 ---
 
